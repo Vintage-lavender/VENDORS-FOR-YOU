@@ -1,0 +1,57 @@
+,Major_category,Sub_category,vendor_tag_num
+0,Cuisine,American,1
+1,Cuisine,Arabic,2
+2,Cuisine,Asian,3
+3,Cuisine,Chinese,7
+4,Cuisine,Indian,10
+5,Cuisine,Japanese,11
+6,Cuisine,Lebanese,12
+7,Cuisine,Omani,13
+8,Cuisine,Thai,19
+9,Cuisine,Italian,34
+10,Cuisine,Mexican,42
+11,Fast Food,Burgers,5
+12,Fast Food,Sandwiches,16
+13,Fast Food,Pizzas,15
+14,Fast Food,Hot Dogs,29
+15,Fast Food,Fries,30
+16,Healthy Options,Healthy Food,9
+17,Healthy Options,Salads,24
+18,Healthy Options,Vegetarian,21
+19,Healthy Options,Organic,73
+20,Desserts & Sweets,Desserts,8
+21,Desserts & Sweets,Cakes,41
+22,Desserts & Sweets,Ice creams,43
+23,Desserts & Sweets,Sweets,56
+24,Desserts & Sweets,Donuts,57
+25,Desserts & Sweets,Churros,80
+26,Desserts & Sweets,Frozen yoghurt,64
+27,Beverages,Milkshakes,32
+28,Beverages,Smoothies,36
+29,Beverages,Fresh Juices,38
+30,Beverages,Coffee,60
+31,Beverages,Hot Chocolate,61
+32,Beverages,Mojitos,52
+33,Beverages,Karak,79
+34,Beverages,Spanish Latte,86
+35,Snacks & Sides,Waffles,25
+36,Snacks & Sides,Bagels,26
+37,Snacks & Sides,Rolls,45
+38,Snacks & Sides,Fatayers,46
+39,Snacks & Sides,Pancakes,62
+40,Snacks & Sides,Pastry,63
+41,Snacks & Sides,Dimsum,58
+42,Grilled & BBQ,Grills,22
+43,Grilled & BBQ,Shawarma,23
+44,Grilled & BBQ,Kebabs,44
+45,Grilled & BBQ,Steaks,35
+46,Seafood & Meat,Seafood,17
+47,Seafood & Meat,Biryani,31
+48,Seafood & Meat,Sushi,54
+49,Bakery & Dough,Cafe,6
+50,Bakery & Dough,Pasta,27
+51,Bakery & Dough,Soups,28
+52,Bakery & Dough,Crepes,51
+53,Bakery & Dough,Manakeesh,50
+54,Bakery & Dough,Pizza,89
+55,Bakery & Dough,Pastas,90
