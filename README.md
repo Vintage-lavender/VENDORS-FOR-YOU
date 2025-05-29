@@ -1,12 +1,15 @@
 # 📦 Vendors-for-You
-> 거리·평점·배달비·조리시간 기준으로 정렬해 주는 데스크톱 GUI 애플리케이션
+> 거리·평점·배달비·조리시간 기준으로 정렬해 주는 데스크톱 애플리케이션
 
 ## 목적
-- **내 주변 가게를 거리·평점·배달비·조리시간 기준으로 한눈에 비교**
-- **MySQL** 로컬 데이터베이스와 간단한 Python GUI(Tkinter)로 기능 구현
+- **저장된 위치의 주변 가게를 거리·평점·배달비·조리시간 기준으로 한눈에 비교**
+- **MySQL** 로컬 데이터베이스와 **Python GUI(Tkinter)**로 기능 구현
 
 ## 진행 기간
 - 2023.10.30 ~ 2023.12.04
+
+## 사용 데이터셋
+- [캐글 Restaurant Recommendation Challenge 데이터셋](https://www.kaggle.com/datasets/mrmorj/restaurant-recommendation-challenge/data)
   
 ## 주요 기능
 | 기능 | 설명 |
@@ -31,15 +34,22 @@ cd VENDORS-FOR-YOU
 ```
 ### 2) 데이터베이스 생성 및 초기 데이터 삽입
 ```bash
-mysql -u root -p < group5-db-dump.sql
+mysql -u root < group5-db-dump.sql
 ```
-- 단, 기존에 project라는 이름의 DB가 있었다면, 기존 DB를 백업해두고 실행
+- mysql이 설치되어 있지 않다면, mysql 설치 및 서버 실행
   ```bash
-  mysqldump -u root -p project > project-backup.sql
+  brew install mysql
+  brew services start mysql
+  ```
+- 기존에 project라는 이름의 DB가 있었다면, 기존 DB를 백업해두고 실행
+  ```bash
+  mysqldump -u root project > project-backup.sql
   ```
 
 ### 3) 패키지 설치
 ```bash
+conda create -n gfive python=3.12 tk
+conda activate gfive
 pip install -r requirements.txt
 ```
 ### 4) GUI 실행
@@ -56,22 +66,21 @@ python GUI/group5-main.py
   - `30PZXDS`
 
 ### 2. 위치 및 카테고리 선택
-- 로그인 후, **위치**를 선택합니다.
+- 로그인 후, 저장된 위치 중 원하는 위치를 선택합니다.
 - `Major Category` → `Sub Category` 를 차례로 선택하여 메뉴를 찾습니다.
 
 ### 3. 가게 목록 살펴보기
 - 목록은 기본적으로 **거리 순**으로 정렬됩니다.
-- 상단 버튼으로 즉시 재정렬  
+- 정렬 기준
   - `평점` · `배달비` · `조리시간`
 - **OPEN** 버튼을 누르면 현재 영업 중인 가게만 필터링됩니다.
 
 ### 4. 좋아요(♥) 관리
-- 가게 카드를 클릭해 ♥ ‘좋아요’ 표시
+- 가게 카드를 클릭해 ♥ ‘좋아요’를 표시할 수 있습니다.
 - **View Likes** 버튼으로 내가 좋아요를 누른 가게만 빠르게 확인 가능합니다.
 
 ### 5. 상세 정보 확인
-- 각 가게 카드에서 **Show Details** 를 클릭하면  
-  주소, 전화번호, 운영시간 등 추가 정보를 볼 수 있습니다.
+- 각 가게 카드에서 **Show Details** 를 클릭하면 주소, 전화번호, 운영시간 등 추가 정보를 볼 수 있습니다.
 
 ## 주요 기여
 - 프로젝트의 일정 계획, 데이터 전처리, 프로토타입 제작 및 코드 구현, 코드 수합 및 정리 등의 프로젝트 전반의 작업들을 수행했습니다.
