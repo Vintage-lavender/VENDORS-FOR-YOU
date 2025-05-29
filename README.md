@@ -29,7 +29,7 @@
 git clone https://github.com/Vintage-lavender/VENDORS-FOR-YOU.git
 cd VENDORS-FOR-YOU
 ```
-# 2) 데이터베이스 생성 및 초기 데이터 삽입
+### 2) 데이터베이스 생성 및 초기 데이터 삽입
 ```bash
 mysql -u root -p < group5-db-dump.sql
 ```
@@ -38,11 +38,11 @@ mysql -u root -p < group5-db-dump.sql
   mysqldump -u root -p project > project-backup.sql
   ```
 
-# 3) 패키지 설치
+### 3) 패키지 설치
 ```bash
 pip install -r requirements.txt
 ```
-# 4) GUI 실행
+### 4) GUI 실행
 ```bash
 python GUI/group5-main.py
 ```
